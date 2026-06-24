@@ -11,7 +11,8 @@ import { IoIosCheckmark } from "react-icons/io";
 
 const HeroSection = () => {
   return (
-    <div className="container mx-auto px-4 pt-28 pb-16 lg:px-8 lg:pt-36 lg:pb-32 bg-white dark:bg-[#030712] dark:bg-[radial-gradient(circle_at_bottom_left,_rgba(220,38,38,0.18),transparent_45%),radial-gradient(circle_at_top_right,_rgba(29,78,216,0.12),transparent_40%)]">
+    <section>
+    <div className="container mx-auto px-4 py-24 lg:px-8 lg:py-32 bg-white dark:bg-[#030712] dark:bg-[radial-gradient(circle_at_bottom_left,_rgba(220,38,38,0.18),transparent_45%),radial-gradient(circle_at_top_right,_rgba(29,78,216,0.12),transparent_40%)]">
       <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
         {/* left section */}
         <div>
@@ -207,6 +208,7 @@ const HeroSection = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
