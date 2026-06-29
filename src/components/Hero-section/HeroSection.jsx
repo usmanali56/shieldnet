@@ -8,6 +8,7 @@ import { FaLongArrowAltUp } from "react-icons/fa";
 import { FaExclamationTriangle } from "react-icons/fa";
 import { HiOutlineInformationCircle } from "react-icons/hi2";
 import { IoIosCheckmark } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -39,17 +40,17 @@ const HeroSection = () => {
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <a
-              href=""
+              href="#Security"
               className="inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-medium text-white shadow-lg transition-all hover:shadow-xl bg-[#E11b48] hover:bg-[#be123c]"
             >
               Start Free Trial <FaLongArrowAltRight />
             </a>
-            <a
-              href=""
+            <Link
+              to="/"
               className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-gray-300 px-8 py-4 text-base font-medium text-gray-700 transition-all hover:border-gray-400 hover:bg-gray-50 dark:border-white/20 dark:text-white dark:hover:border-white/40 dark:hover:bg-white/5"
             >
               <MdOutlinePlayCircle /> Watch Demo
-            </a>
+            </Link>
           </div>
 
           {/* Stats */}

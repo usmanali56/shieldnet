@@ -7,7 +7,7 @@ import { MdOutlinePhone } from "react-icons/md";
 
 const Security = () => {
   return (
-    <div className='py-20 lg:py-28 bg-white dark:bg-gray-950'>
+    <div className='py-20 lg:py-28 bg-white dark:bg-gray-950' id='Security'>
       <div className='container mx-auto px-4 lg:px-8'>
 
         <div className='mx-auto max-w-3xl text-center'>
