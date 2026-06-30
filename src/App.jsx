@@ -20,6 +20,9 @@ import PricingPage from './pages/Pricing/Pricing'
 import AboutPage from './pages/About/About'
 import BlogPage from './pages/Blog/Blog'
 import ContactPage from './pages/Contact/Contact'
+import Privacy from './pages/Privacy/Privacy'
+import Terms from './pages/Terms/Terms'
+import Style from './pages/Style/Style'
 
 const App = () => {
   return (
@@ -48,7 +51,9 @@ const App = () => {
         <Route path='/about' element={<AboutPage />} />
         <Route path='/blog' element={<BlogPage />} />
         <Route path='/contact' element={<ContactPage />} />
-
+<Route path='/privacy' element={<Privacy />} />
+<Route path='/terms' element={<Terms />} />
+<Route path='/style' element={<Style />} />
       </Routes>
 
       <Footer />

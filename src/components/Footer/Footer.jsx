@@ -207,24 +207,24 @@ const Footer = () => {
             © 2026 ShieldNet. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <a
-              href=""
+            <Link
+              to="/privacy"
               className="text-sm text-gray-500 transition-colors hover:text-gray-300"
             >
               Privacy Policy
-            </a>
-            <a
-              href=""
+            </Link>
+            <Link
+              to="/terms"
               className="text-sm text-gray-500 transition-colors hover:text-gray-300"
             >
               Terms of Service
-            </a>
-            <a
-              href=""
+            </Link>
+            <Link
+              to="/style"
               className="text-sm text-gray-500 transition-colors hover:text-gray-300"
             >
               Style Guide
-            </a>
+            </Link>
           </div>
         </div>
       </div>

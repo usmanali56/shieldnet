@@ -31,18 +31,18 @@ const Operations = () => {
                     type="text"
                     id="name"
                     className='mt-2 block w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 placeholder-gray-500 focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400'
-                    placeholder='Usman'
+                    placeholder='Jane Smith'
                   />
                 </div>
                 <div>
                   <label htmlFor="email" className='block text-sm font-medium text-gray-700 dark:text-gray-300'>
-                    Email Address
+                  Work Email
                   </label>
                   <input
                     type="email"
                     id="email"
                     className='mt-2 block w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 placeholder-gray-500 focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400'
-                    placeholder='usman@gmail.com'
+                    placeholder='Jane@company.com'
                   />
                 </div>
               </div>
@@ -63,13 +63,13 @@ const Operations = () => {
               {/* Message */}
               <div>
                 <label htmlFor="message" className='block text-sm font-medium text-gray-700 dark:text-gray-300'>
-                  Project Details
+                  Message
                 </label>
                 <textarea
                   id="message"
                   rows="5"
                   className='mt-2 block w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 placeholder-gray-500 focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400'
-                  placeholder='Tell us about your project...'
+                  placeholder='Describe your security needs, current infrastructure, and timeline...'
                 ></textarea>
               </div>
 
