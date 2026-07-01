@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";   // ✅ 1. ye import add karein
 import { IoSearchOutline } from "react-icons/io5";
 import img1 from "../../assets/arti1.jpeg";
 import img2 from "../../assets/arti2.jpeg";
@@ -9,9 +10,11 @@ import dp2 from "../../assets/img3.jpeg";
 import dp3 from "../../assets/img6.jpeg";
 import dp4 from "../../assets/img4.jpeg";
 import dp5 from "../../assets/img5.jpeg";
+
 const articles = [
   {
     id: 1,
+    slug: "blog1",   // ✅ 2. ye add karein
     category: "Architecture",
     date: "Feb 20, 2026",
     title: "The Complete Guide to Zero Trust Architecture in 2026",
@@ -23,6 +26,7 @@ const articles = [
   },
   {
     id: 2,
+    slug: "blog2",   // ✅
     category: "Threat Intel",
     date: "Feb 12, 2026",
     title: "Ransomware Prevention Strategies for 2026",
@@ -34,6 +38,7 @@ const articles = [
   },
   {
     id: 3,
+    slug: "blog3",   // ✅
     category: "Cloud",
     date: "Feb 5, 2026",
     title: "Cloud Security Posture Management: A Practical Guide",
@@ -45,6 +50,7 @@ const articles = [
   },
   {
     id: 4,
+    slug: "blog4",   // ✅
     category: "Technology",
     date: "Jan 28, 2026",
     title: "How AI Is Transforming Threat Detection",
@@ -56,6 +62,7 @@ const articles = [
   },
   {
     id: 5,
+    slug: "blog5",   // ✅
     category: "Operations",
     date: "Jan 18, 2026",
     title: "Building an Effective Incident Response Playbook",
@@ -76,11 +83,11 @@ const categories = [
   "Operations",
 ];
 
+
 const Articles = () => {
   const [activeCategory, setActiveCategory] = useState("All");
   const [searchTerm, setSearchTerm] = useState("");
 
-  // Filter logic - category aur search dono ek saath
   const filteredArticles = articles.filter((article) => {
     const matchesCategory =
       activeCategory === "All" || article.category === activeCategory;
@@ -129,7 +136,9 @@ const Articles = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {filteredArticles.length > 0 ? (
             filteredArticles.map((article) => (
-              <div
+              // ✅ 3. div ki jagah Link, aur to={`/${article.slug}`} add kiya
+              <Link
+                to={`/${article.slug}`}
                 key={article.id}
                 className="group overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
               >
@@ -179,7 +188,7 @@ const Articles = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>  
             ))
           ) : (
             <p className="col-span-full text-center text-gray-500 dark:text-gray-400 py-12">
