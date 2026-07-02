@@ -53,19 +53,28 @@ const testimonials = [
 
 export default function Testimonials() {
   const [currentPage, setCurrentPage] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
+  const [visibleCards, setVisibleCards] = useState(3);
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
+    const updateVisibleCards = () => {
+      if (window.matchMedia("(max-width: 767px)").matches) {
+        setVisibleCards(1);
+      } else if (window.matchMedia("(max-width: 1023px)").matches) {
+        setVisibleCards(2);
+      } else {
+        setVisibleCards(3);
+      }
     };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    updateVisibleCards();
+    window.addEventListener("resize", updateVisibleCards);
+    return () => window.removeEventListener("resize", updateVisibleCards);
   }, []);
 
-  const visibleCards = isMobile ? 1 : 3;
   const totalPages = testimonials.length - visibleCards + 1;
+
+  useEffect(() => {
+    setCurrentPage(0);
+  }, [visibleCards]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -84,9 +93,23 @@ export default function Testimonials() {
 
   return (
     <div className="relative w-full bg-[#fcfcfd] dark:bg-[#0f172a] py-16 px-4 select-none font-sans transition-colors duration-300 overflow-hidden">
+
+      {/* Header Text */}
+      <div data-aos="fade-up" className="text-center max-w-2xl mx-auto mb-12">
+        <span className="inline-block bg-[#ffe4e6] dark:bg-[#881337] text-[#e11d48] dark:text-[#fda4af] text-sm font-medium px-4 py-1 rounded-full mb-4">
+          Testimonials
+        </span>
+        <h2 className="text-3xl md:text-4xl font-bold text-[#0f172a] dark:text-white mb-4">
+          Trusted by Security Leaders
+        </h2>
+        <p className="text-gray-500 dark:text-gray-400 text-[16px] leading-relaxed">
+          See why CISOs and security teams across industries choose ShieldNet to protect their organizations.
+        </p>
+      </div>
+
       {/* Main Wrapper with Left/Right spacing for arrows */}
-      <div className="max-w-[1400px] mx-auto relative flex items-center px-12">
-        
+      <div className="max-w-[1400px] mx-auto relative flex items-center px-6 md:px-12">
+
         {/* Left Arrow */}
         <button
           onClick={handlePrev}
@@ -97,7 +120,7 @@ export default function Testimonials() {
           </svg>
         </button>
 
-        {/* Viewport Mask (Yahan padding bilkul zero kar di taake card poora fit ho) */}
+        {/* Viewport Mask */}
         <div className="w-full overflow-hidden">
           {/* Sliding Track */}
           <div
@@ -107,16 +130,20 @@ export default function Testimonials() {
               transform: `translateX(-${currentPage * (100 / testimonials.length)}%)`,
             }}
           >
-            {testimonials.map((item) => (
+            {testimonials.map((item, index) => (
               <div
                 key={item.id}
                 style={{ width: `${100 / testimonials.length}%` }}
-                className="flex-shrink-0 px-3 h-full"
+                className="flex-shrink-0 px-1.5 md:px-3 h-full"
               >
-                <div className="bg-white dark:bg-[#1e293b] border border-[#f0f1f3] dark:border-gray-800 rounded-2xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.02)] dark:shadow-[0_4px_20px_rgba(0,0,0,0.2)] flex flex-col justify-between min-h-[340px] h-full transition-colors duration-300">
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay={index * 100}
+                  className="bg-white dark:bg-[#1e293b] border border-[#f0f1f3] dark:border-gray-800 rounded-2xl p-5 md:p-8 shadow-[0_4px_20px_rgba(0,0,0,0.02)] dark:shadow-[0_4px_20px_rgba(0,0,0,0.2)] flex flex-col justify-between min-h-[240px] md:min-h-[340px] h-full transition-colors duration-300"
+                >
                   <div>
                     {/* Stars */}
-                    <div className="flex space-x-1 mb-6">
+                    <div className="flex space-x-1 mb-4 md:mb-6">
                       {[...Array(item.rating)].map((_, i) => (
                         <svg
                           key={i}
@@ -131,14 +158,14 @@ export default function Testimonials() {
                     </div>
 
                     {/* Text */}
-                    <p className="text-[#0f172a] dark:text-[#f8fafc] text-[16px] font-normal leading-[1.6] tracking-wide mb-8 min-h-[110px]">
+                    <p className="text-[#0f172a] dark:text-[#f8fafc] text-[15px] md:text-[16px] font-normal leading-[1.6] tracking-wide mb-6 md:mb-8 min-h-[90px] md:min-h-[110px]">
                       {item.text}
                     </p>
                   </div>
 
                   {/* Profile Block */}
                   <div className="flex items-center space-x-4 mt-auto">
-                    <div className="w-12 h-12 rounded-full bg-[#ffebee] dark:bg-[#881337] flex items-center justify-center text-[#ff4769] dark:text-[#fda4af] font-semibold text-lg flex-shrink-0">
+                    <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#ffebee] dark:bg-[#881337] flex items-center justify-center text-[#ff4769] dark:text-[#fda4af] font-semibold text-base md:text-lg flex-shrink-0">
                       {item.initial}
                     </div>
                     <div>

@@ -9,6 +9,9 @@ const Navbar = () => {
     const { isDark, toggleTheme } = useTheme();
     const [isOpen, setIsOpen] = useState(false);
 
+    // Mobile menu link par click hote hi menu band ho jayega
+    const closeMenu = () => setIsOpen(false);
+
   return (
     <div>
       <header className='fixed top-0 left-0 w-full z-50 border-b border-gray-200 bg-white backdrop-blur-lg transition-all dark:border-gray-800 dark:bg-[#0a0a0f]'>
@@ -36,7 +39,7 @@ const Navbar = () => {
             <button onClick={toggleTheme} className='rounded-lg p-2 text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white'>
               {isDark ? '☀️' : '🌙'}
             </button>
-            <Link to="Pricing" className='hidden lg:inline-flex rounded-xl bg-[#E11D48] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-red-700'>
+            <Link to="/pricing" className='hidden lg:inline-flex rounded-xl bg-[#E11D48] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-red-700'>
               Get Protected
             </Link>
             <button
@@ -55,12 +58,12 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div className='lg:hidden border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-[#0a0a0f] px-4 py-4 flex flex-col gap-4'>
-            <Link to="/solutions" className='text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white'>Solutions</Link>
-            <Link to="/pricing" className='text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white'>Pricing</Link>
-            <Link to="/about" className='text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white'>About</Link>
-            <Link to="/blog" className='text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white'>Blog</Link>
-            <Link to="Contact" className='text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white'>Contact</Link>
-            <Link to="/pricing" className='w-full text-center rounded-xl bg-[#E11D48] px-4 py-2 text-sm font-medium text-white hover:bg-red-700'>
+            <Link onClick={closeMenu} to="/solutions" className='text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white'>Solutions</Link>
+            <Link onClick={closeMenu} to="/pricing" className='text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white'>Pricing</Link>
+            <Link onClick={closeMenu} to="/about" className='text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white'>About</Link>
+            <Link onClick={closeMenu} to="/blog" className='text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white'>Blog</Link>
+            <Link onClick={closeMenu} to="/contact" className='text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white'>Contact</Link>
+            <Link onClick={closeMenu} to="/pricing" className='w-full text-center rounded-xl bg-[#E11D48] px-4 py-2 text-sm font-medium text-white hover:bg-red-700'>
               Get Protected
             </Link>
           </div>

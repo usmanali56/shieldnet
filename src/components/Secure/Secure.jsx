@@ -21,18 +21,18 @@ const Secure = () => {
 
       <div className='container relative z-10 mx-auto px-4 lg:px-8'>
         <div className='mx-auto max-w-3xl text-center'>
-          <h2 className='text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl'>
+          <h2 data-aos="fade-up"  className='text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl'>
             Ready to Secure Your Organization?
           </h2>
-          <p className='mx-auto mt-4 max-w-xl text-lg text-white/80'>
+          <p data-aos="fade-up"  className='mx-auto mt-4 max-w-xl text-lg text-white/80'>
             Join thousands of security teams who trust ShieldNet to protect their most critical assets. Start your free trial today.
           </p>
           <div className='mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row'>
-            <a href="#Security" className='inline-flex items-center justify-center gap-2 rounded-lg bg-white px-8 py-3 text-base font-medium text-[#c1193a] shadow-lg transition-all hover:bg-gray-100 hover:shadow-xl'>
+            <a  data-aos="fade-up" href="#Security" className='inline-flex items-center justify-center gap-2 rounded-lg bg-white px-8 py-3 text-base font-medium text-[#c1193a] shadow-lg transition-all hover:bg-gray-100 hover:shadow-xl'>
               Start Free Trial
               <FaArrowRightLong className='h-5 w-5' />
             </a>
-            <a href="" className='inline-flex items-center justify-center gap-2 rounded-lg border-2 border-white/30 px-8 py-3 text-base font-medium text-white transition-all hover:border-white hover:bg-white/10'>
+            <a  data-aos="fade-up" href="" className='inline-flex items-center justify-center gap-2 rounded-lg border-2 border-white/30 px-8 py-3 text-base font-medium text-white transition-all hover:border-white hover:bg-white/10'>
               Talk to Expert
               <MdOutlinePhone className='h-5 w-5' />
             </a>

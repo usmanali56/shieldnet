@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import ScrollProgress from './components/ScrollProgress/ScrollProgress'
@@ -30,8 +30,19 @@ import Blog4 from './pages/blogcard/Blog4/Blog4'
 import Blog5 from './pages/blogcard/Blog5/Blog5'
 import Articles from './pages/Blog/Articles'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const App = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+      easing: "ease-in-sine",
+      delay:0,
+      offset: 0,
+      once: true,
+    });
+    AOS.refresh();
+  }, []);
   return (
     <BrowserRouter>
     <ScrollToTop />

@@ -26,7 +26,7 @@ const faqs = [
     answer:
       "Unlike signature-based solutions, ShieldNet uses behavioral AI models that detect anomalous activity patterns regardless of whether a threat signature exists. Our engine analyzes process behavior, memory operations, and network activity to identify and block zero-day exploits in real time.",
   },
- 
+
 ];
 
 function PlusIcon() {
@@ -42,9 +42,13 @@ function CrossIcon() {
   return <span className="text-base font-light leading-none">×</span>;
 }
 
-function FAQItem({ question, answer, isOpen, onClick }) {
+function FAQItem({ question, answer, isOpen, onClick, delay }) {
   return (
-    <div className="border-b border-gray-200 dark:border-gray-700">
+    <div
+      data-aos="fade-up"
+      data-aos-delay={delay}
+      className="border-b border-gray-200 dark:border-gray-700"
+    >
       <button
         onClick={onClick}
         aria-expanded={isOpen}
@@ -86,7 +90,7 @@ export default function ShieldNetFAQ() {
       <div className="container mx-auto px-4 lg:px-8">
 
         {/* Header */}
-        <div className="mx-auto max-w-3xl text-center mb-16">
+        <div data-aos="fade-up" className="mx-auto max-w-3xl text-center mb-16">
           <div className="mb-4 inline-flex items-center rounded-full bg-[#f3cfcf] px-3 py-1 text-sm font-medium text-[#ff9898] dark:bg-[#ebabab] dark:text-[#f16363]">
             FAQ
           </div>
@@ -107,6 +111,7 @@ export default function ShieldNetFAQ() {
               answer={faq.answer}
               isOpen={openIndex === index}
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
+              delay={index * 100}
             />
           ))}
         </div>
