@@ -7,6 +7,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+
 const Footer = () => {
   return (
     <div className="bg-gray-900 pt-16 text-gray-300 lg:pt-24">
@@ -14,13 +15,10 @@ const Footer = () => {
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-8">
           {/* Brand colums */}
           <div className="lg:col-span-4">
-            <a href="" className="inline-block">
-              <img
-                src="https://shieldnet-colorlib.pages.dev/assets/img/logo-light.svg"
-                alt=""
-                className="h-10 w-auto"
-              />
-            </a>
+           
+        <Link to='/' className="inline-block">
+         <img loading="lazy" src="https://shieldnet-colorlib.pages.dev/assets/img/logo-light.svg" alt="" className="h-10 w-auto"/>
+        </Link>
             <p className="mt-4 max-w-xs text-gray-400">
               Advanced threat protection platform for modern teams. Detect,
               prevent, and respond to cyber threats in real time.

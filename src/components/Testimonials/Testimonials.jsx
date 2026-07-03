@@ -96,7 +96,7 @@ export default function Testimonials() {
 
       {/* Header Text */}
       <div data-aos="fade-up" className="text-center max-w-2xl mx-auto mb-12">
-        <span className="inline-block bg-[#ffe4e6] dark:bg-[#881337] text-[#e11d48] dark:text-[#fda4af] text-sm font-medium px-4 py-1 rounded-full mb-4">
+        <span className="inline-block bg-[#ffe4e6] dark:bg-[#881337] text-[#be123c] dark:text-[#fda4af] text-sm font-medium px-4 py-1 rounded-full mb-4">
           Testimonials
         </span>
         <h2 className="text-3xl md:text-4xl font-bold text-[#0f172a] dark:text-white mb-4">

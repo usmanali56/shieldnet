@@ -8,7 +8,7 @@ const Content2 = () => {
           {/* Blog Content */}
           <div className=' text-gray-600 dark:text-gray-400 leading-relaxed mt-15'>
     
-            <p className='mb-6'>
+            <p className='mb-6 text-base font-normal'>
              Ransomware remains the most financially devastating cyber threat in 2026, with the average ransom 
              payment now exceeding $1.5 million and total recovery costs often reaching five times 
              that amount. But the tactics have evolved significantly from the spray-and-pray campaigns of years past.
@@ -17,26 +17,26 @@ const Content2 = () => {
             <h2 className='text-2xl font-bold text-gray-900 dark:text-white mb-4 pt-6'>
               The Modern Ransomware Playbook
             </h2>
-    <p className='mb-6'>
+    <p className='mb-6 text-base font-normal'>
 Today’s ransomware operators run sophisticated operations that mirror legitimate businesses.
  They conduct extensive reconnaissance, establish persistent access, and exfiltrate sensitive data before deploying encryption.
  This dual-extortion model — encrypting files while threatening to leak stolen data — has become the standard approach.
     </p>
             <ul className='list-disc pl-5 mb-6 space-y-3'>
               <li>
-                <span className='font-bold text-gray-900 dark:text-white'>Initial Access:</span> 
+                <strong className='font-bold text-gray-900 dark:text-white'>Initial Access:</strong> 
                 Phishing emails, exploited vulnerabilities, and compromised credentials remain the top entry vectors
               </li>
               <li>
-                <span className='font-bold text-gray-900 dark:text-white'>Lateral Movement:</span> 
+                <strong className='font-bold text-gray-900 dark:text-white'>Lateral Movement:</strong> 
                 Attackers spend an average of 11 days inside networks before deploying ransomware
               </li>
               <li>
-                <span className='font-bold text-gray-900 dark:text-white'>Data Exfiltration:</span>
+                <strong className='font-bold text-gray-900 dark:text-white'>Data Exfiltration:</strong>
                 Over 80% of ransomware attacks now include data theft as leverage
               </li>
               <li>
-                <span className='font-bold text-gray-900 dark:text-white'>Encryption Deployment:</span>
+                <strong className='font-bold text-gray-900 dark:text-white'>Encryption Deployment:</strong>
                 Modern strains can encrypt an entire network in under four hours
               </li>
               
@@ -45,35 +45,35 @@ Today’s ransomware operators run sophisticated operations that mirror legitima
             <h2 className='text-2xl font-bold text-gray-900 dark:text-white mb-4'>
              Prevention Strategies That Work
             </h2>
-    <p className='mb-6'>
+    <p className='mb-6 text-base font-normal'>
         The most effective defense against ransomware is a layered approach that combines technology, process, and people:
     </p>
            
             <div className='text-gray-600 dark:text-gray-400 leading-relaxed'>
 
-  <p className='mb-6'>
+  <p className='mb-6 text-base font-normal '>
     <span className='font-bold text-gray-900 dark:text-white'>Endpoint Protection:</span> Deploy
     next-generation EDR solutions that use behavioral analysis rather than signatures to
     detect ransomware activity. Look for solutions that can detect encryption behavior at
     the kernel level and automatically isolate compromised endpoints.
   </p>
 
-  <p className='mb-6'>
-    <span className='font-bold text-gray-900 dark:text-white'>Network Segmentation:</span> Limit
+  <p className='mb-6 text-base font-normal'>
+    <strong className='font-bold text-gray-900 dark:text-white'>Network Segmentation:</strong> Limit
     lateral movement by segmenting your network into isolated zones. If an attacker
     compromises one segment, they should not be able to reach your most critical assets
     without triggering additional security controls.
   </p>
 
-  <p className='mb-6'>
-    <span className='font-bold text-gray-900 dark:text-white'>Backup Strategy:</span> Follow
+  <p className='mb-6 text-base font-normal'>
+    <strong className='font-bold text-gray-900 dark:text-white'>Backup Strategy:</strong> Follow
     the 3-2-1-1-0 rule — three copies of data, on two different media types, with one
     offsite, one offline, and zero errors in recovery testing. Regularly test your
     restoration procedures under realistic conditions.
   </p>
 
-  <p className='mb-6'>
-    <span className='font-bold text-gray-900 dark:text-white'>Patch Management:</span> Maintain
+  <p className='mb-6 text-base font-normal'>
+    <strong className='font-bold text-gray-900 dark:text-white'>Patch Management:</strong> Maintain
     aggressive patching cadence for internet-facing systems. The median time from
     vulnerability disclosure to ransomware exploitation has shrunk to just 5 days in 2026.
   </p>
@@ -82,7 +82,7 @@ Today’s ransomware operators run sophisticated operations that mirror legitima
     <h2 className='text-2xl font-bold text-gray-900 dark:text-white mb-4 pt-6'>
              Incident Response Readiness
             </h2>
-    <p className='mb-6'>
+    <p className='mb-6 text-base font-normal'>
 Despite your best prevention efforts, you need a tested incident response plan.
  Run tabletop exercises quarterly, maintain offline copies of your IR playbooks,
   and establish relationships with law enforcement and incident

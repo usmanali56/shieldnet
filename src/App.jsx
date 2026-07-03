@@ -32,13 +32,14 @@ import Articles from './pages/Blog/Articles'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton'
 const App = () => {
   useEffect(() => {
     AOS.init({
-      duration: 500,
+      duration:700,
       easing: "ease-in-sine",
-      delay:0,
-      offset: 0,
+      delay:300,
+      offset: 50,
       once: true,
     });
     AOS.refresh();
@@ -46,6 +47,7 @@ const App = () => {
   return (
     <BrowserRouter>
     <ScrollToTop />
+    <ScrollToTopButton />
       <ScrollProgress />
       <Navbar />
 

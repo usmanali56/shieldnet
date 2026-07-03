@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Secure = () => {
   return (
-    <div className="bg-[#E11D48] py-16 lg:py-24 dark:bg-[#4C0519]">
+    <div className="bg-[#E11D48] py-16 lg:py-24 dark:bg-[#881337]">
       <div className="container mx-auto px-4 text-center lg:px-8">
         <h3 className="text-3xl font-bold text-white sm:text-4xl">
           Secure Your Organization Today

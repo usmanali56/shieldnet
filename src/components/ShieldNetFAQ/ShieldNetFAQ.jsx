@@ -52,9 +52,9 @@ function FAQItem({ question, answer, isOpen, onClick, delay }) {
       <button
         onClick={onClick}
         aria-expanded={isOpen}
-        className="w-full flex items-center justify-between gap-6 py-6 text-left bg-transparent border-none cursor-pointer"
+        className="w-full flex items-center justify-between gap-6 py-6 text-left bg-transparent border-none cursor-pointer "
       >
-        <span className="text-[15px] font-semibold leading-snug tracking-wide text-gray-900 dark:text-white">
+        <span className="text-lg font-medium leading-snug tracking-wide text-gray-900 dark:text-white">
           {question}
         </span>
 
@@ -74,7 +74,7 @@ function FAQItem({ question, answer, isOpen, onClick, delay }) {
           isOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <p className="text-sm leading-7 pb-6 pr-12 text-gray-600 dark:text-gray-400">
+        <p className="text-base font-normal leading-7 pb-6 pr-12 text-gray-600 dark:text-gray-400">
           {answer}
         </p>
       </div>
@@ -91,10 +91,10 @@ export default function ShieldNetFAQ() {
 
         {/* Header */}
         <div data-aos="fade-up" className="mx-auto max-w-3xl text-center mb-16">
-          <div className="mb-4 inline-flex items-center rounded-full bg-[#f3cfcf] px-3 py-1 text-sm font-medium text-[#ff9898] dark:bg-[#ebabab] dark:text-[#f16363]">
+          <div className="mb-4 inline-flex items-center rounded-full bg-[#ffe4e6] px-3 py-1 text-sm font-medium text-[#be123c] dark:bg-[#881337] dark:text-[#fda4af]">
             FAQ
           </div>
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
+          <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl dark:text-white">
             Frequently Asked Questions
           </h2>
           <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
@@ -103,7 +103,7 @@ export default function ShieldNetFAQ() {
         </div>
 
         {/* FAQ List */}
-        <div className="mx-auto max-w-3xl border-t border-gray-200 dark:border-gray-700">
+        <div className="mx-auto max-w-3xl border-t border-gray-100 dark:border-gray-700">
           {faqs.map((faq, index) => (
             <FAQItem
               key={index}

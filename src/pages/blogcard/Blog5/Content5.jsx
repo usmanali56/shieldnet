@@ -8,7 +8,7 @@ const Content5 = () => {
           {/* Blog Content */}
           <div className=' text-gray-600 dark:text-gray-400 leading-relaxed mt-15'>
     
-            <p className='mb-6'>
+            <p className='mb-6 text-base font-normal '>
              When a security incident occurs, the difference between a minor disruption and a 
              catastrophic breach often comes down to preparation. Organizations with well-documented,
               regularly tested incident response playbooks consistently recover faster,
@@ -18,54 +18,54 @@ const Content5 = () => {
             <h2 className='text-2xl font-bold text-gray-900 dark:text-white mb-4 pt-6'>
              The NIST Incident Response Framework
             </h2>
-    <p className='mb-4'>
+    <p className='mb-4 text-base font-normal'>
 The gold standard for incident response is the NIST SP 800-61 framework,
  which divides the process into four phases:
     </p>
             <ol className='list-decimal pl-5 mb-6 space-y-2'>
               <li>
-                <span className='font-bold text-gray-900 dark:text-white'>Preparation</span>
+                <strong className='font-bold text-gray-900 dark:text-white'>Preparation</strong>
                 — Establishing the IR team, tools, communications plans, and playbooks before an incident occurs
               </li>
               <li>
-                <span className='font-bold text-gray-900 dark:text-white'>Detection & Analysis</span>
+                <strong className='font-bold text-gray-900 dark:text-white'>Detection & Analysis</strong>
                 — Identifying that an incident has occurred, understanding its scope, and assessing its severity
               </li>
               <li>
-                <span className='font-bold text-gray-900 dark:text-white'>Containment, Eradication & Recovery</span> 
+                <strong className='font-bold text-gray-900 dark:text-white'>Containment, Eradication & Recovery</strong> 
                  — Stopping the attack, removing the threat, and restoring normal operations
               </li>
               <li>
-                <span className='font-bold text-gray-900 dark:text-white'>Post-Incident Activity</span> 
+                <strong className='font-bold text-gray-900 dark:text-white'>Post-Incident Activity</strong> 
                  — Documenting lessons learned and improving defenses based on real-world experience
               </li>
             </ol>
     <h2 className='text-2xl font-bold text-gray-900 dark:text-white mb-4 pt-6'>
 Building Your Playbook Library
     </h2>
-    <p className='mb-4'>
+    <p className='mb-4 text-base font-normal'>
 Every organization should maintain playbooks for the most common incident types.
  At minimum, you need documented procedures for:
     </p>
     <ul className='list-disc pl-5 mb-6 space-y-3'>
               <li>
-                <span className='font-bold text-gray-900 dark:text-white'>Ransomware/Malware outbreak</span> 
+                <strong className='font-bold text-gray-900 dark:text-white'>Ransomware/Malware outbreak</strong> 
                 — Isolation procedures, backup verification, law enforcement notification
               </li>
               <li>
-                <span className='font-bold text-gray-900 dark:text-white'>Data breach/exfiltration</span> 
+                <strong className='font-bold text-gray-900 dark:text-white'>Data breach/exfiltration</strong> 
 — Evidence preservation, regulatory notification timelines, affected party communication
               </li>
               <li>
-                <span className='font-bold text-gray-900 dark:text-white'>Phishing compromise</span>
+                <strong className='font-bold text-gray-900 dark:text-white'>Phishing compromise</strong>
  — Account lockout procedures, credential reset workflows, email quarantine
               </li>
               <li>
-                <span className='font-bold text-gray-900 dark:text-white'>Insider threat</span>
+                <strong className='font-bold text-gray-900 dark:text-white'>Insider threat</strong>
                  — Evidence collection, HR coordination, legal considerations
               </li>
                <li>
-                <span className='font-bold text-gray-900 dark:text-white'>DDoS attack</span>
+                <strong className='font-bold text-gray-900 dark:text-white'>DDoS attack</strong>
                 — Traffic scrubbing activation, ISP coordination, service failover
               </li>
             </ul>
@@ -73,12 +73,12 @@ Every organization should maintain playbooks for the most common incident types.
 <h2 className='text-2xl font-bold text-gray-900 dark:text-white mb-4 pt-6'>
 Key Playbook Components
 </h2>
-<p className='mb-4'>
+<p className='mb-4 text-base font-normal'>
 Each playbook should include clearly defined roles and responsibilities, 
 escalation criteria and contact chains, step-by-step technical procedures, communication templates for internal
  and external stakeholders, evidence preservation requirements, and recovery verification checklists.
 </p>
-<p className='mb-4'>
+<p className='mb-4 text-base font-normal'>
 The most critical element is ensuring that playbooks are actionable under stress.
  Write them for the analyst who is handling their first major incident at 3 AM on a Saturday,
   not for a senior engineer during business hours.
@@ -87,7 +87,7 @@ The most critical element is ensuring that playbooks are actionable under stress
 <h2 className='text-2xl font-bold text-gray-900 dark:text-white mb-4 pt-6'>
 Testing and Continuous Improvement
 </h2>
-<p className='mb-4'>
+<p className='mb-4 text-base font-normal'>
 A playbook that has never been tested is just a document.
  Conduct tabletop exercises quarterly, bringing together technical responders,
   legal counsel, communications teams, and executive leadership. Simulate realistic scenarios that test not just

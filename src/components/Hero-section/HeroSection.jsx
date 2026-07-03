@@ -14,7 +14,7 @@ const HeroSection = () => {
   return (
     <section>
     <div className="container mx-auto px-4 py-24 lg:px-8 lg:py-32 bg-white dark:bg-[#030712] dark:bg-[radial-gradient(circle_at_bottom_left,_rgba(220,38,38,0.18),transparent_45%),radial-gradient(circle_at_top_right,_rgba(29,78,216,0.12),transparent_40%)]">
-      <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+      <div className="grid mt-20 items-center gap-12 lg:grid-cols-2 lg:gap-16">
         {/* left section */}
         <div>
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary-200 bg-[#fff1f2] px-4 py-1.5 text-sm font-medium text-[#be123c] dark:border-primary-500/30 dark:bg-primary-500/10 dark:text-primary-300">
@@ -32,7 +32,7 @@ const HeroSection = () => {
             </span>
           </h1>
 
-          <p className="mt-6 max-w-xl text-lg text-gray-600 dark:text-gray-200/80">
+          <p className="mt-6 text-lg max-w-xl font-normal text-gray-600 dark:text-gray-200/80">
             ShieldNet delivers AI-powered threat detection, automated response,
             and continuous monitoring to protect your endpoints, cloud
             workloads, and identities — all from a single unified platform.
@@ -56,40 +56,40 @@ const HeroSection = () => {
           {/* Stats */}
           <div className="mt-14 grid grid-cols-2 gap-8 border-t border-gray-200 pt-10 sm:grid-cols-4 dark:border-white/10">
             <div>
-              <div className="text-2xl font-bold text-[#e11d48] lg:text-3xl">
+              <div data-aos="fade-up" className="text-2xl font-bold text-[#e11d48] lg:text-3xl">
                 10M+
               </div>
-              <div className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+              <div data-aos="fade-up" className="mt-1 font-normal text-sm text-gray-500 dark:text-gray-400">
                 Endpoints Protected
               </div>
-              <div className="text-2xl font-bold text-[#e11d48] lg:text-3xl">
+              <div data-aos="fade-up" className="text-2xl font-bold text-[#e11d48] lg:text-3xl">
                 10M+
               </div>
             </div>
 
             <div>
-              <div className="text-2xl font-bold text-[#e11d48] lg:text-3xl">
+              <div data-aos="fade-up" className="text-2xl font-bold text-[#e11d48] lg:text-3xl">
                 500B+
               </div>
-              <div className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+              <div data-aos="fade-up" className="mt-1 font-normal text-sm text-gray-500 dark:text-gray-400">
                 Events Analyzed
               </div>
             </div>
 
             <div>
-              <div className="text-2xl font-bold text-[#e11d48] lg:text-3xl">
+              <div data-aos="fade-up" className="text-2xl font-bold text-[#e11d48] lg:text-3xl">
                 0.001%
               </div>
-              <div className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+              <div data-aos="fade-up" className="mt-1 font-normal text-sm text-gray-500 dark:text-gray-400">
                 False Positive Rate
               </div>
             </div>
 
             <div>
-              <div className="text-2xl font-bold text-[#e11d48] lg:text-3xl">
+              <div data-aos="fade-up" className="text-2xl font-bold text-[#e11d48] lg:text-3xl">
                 24/7
               </div>
-              <div className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+              <div data-aos="fade-up" className="mt-1 font-normal text-sm text-gray-500 dark:text-gray-400">
                 SOC Coverage
               </div>
             </div>
@@ -102,10 +102,10 @@ const HeroSection = () => {
             {/* dashboard */}
             <div className="flex items-center justify-between border-b border-gray-800 pb-4">
               <div className="flex items-center gap-3">
-                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary-600/20">
-                  <HiOutlineShieldCheck className="text-[#fb7185] font-bold rounded-md bg-[#d38490]" />
+                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#E11D48]">
+                  <HiOutlineShieldCheck className="h-4 w-4 text-base text-[#fb7185]" />
                 </div>
-                <span className='class="text-sm font-semibold text-white'>
+                <span className="text-sm font-semibold text-white">
                   Threat Dashboard
                 </span>
               </div>

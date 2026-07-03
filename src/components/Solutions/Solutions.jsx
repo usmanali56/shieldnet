@@ -11,7 +11,7 @@ const Solutions = () => {
     <div className="bg-gray-50 py-20 lg:py-28 dark:bg-gray-900">
       <div className="container mx-auto px-4 lg:px-8">
         <div  className="mx-auto max-w-3xl text-center">
-          <div data-aos="fade-up" className="mb-4 inline-flex items-center rounded-full bg-[#f3cfcf] px-3 py-1 text-sm font-medium text-[#ff9898] dark:bg-[#ebabab] dark:text-[#f16363]">
+          <div data-aos="fade-up" className="mb-4 inline-flex items-center rounded-full bg-[#ffe4e6] px-3 py-1 text-sm font-medium text-[#BE123C] dark:bg-[#881337] dark:text-[#fda4af]">
             Solutions
           </div>
           <h2 data-aos="fade-up" className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
@@ -25,7 +25,7 @@ const Solutions = () => {
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {/* Endpoint Detection & Response */}
           <div data-aos="fade-up" className="group relative rounded-2xl bg-white p-8 shadow-md hover:shadow-xl transition-all dark:bg-gray-800 dark:shadow-gray-900/50">
-            <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-[#dd9f9f] text-[#f13737] transition-colors group-hover:bg-[#fb4848] group-hover:text-white dark:bg-[#f88585] dark:text-[#e8b8b8]">
+            <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-[#ffe4e6] text-[#e11d48] transition-colors group-hover:bg-[#e11d48] group-hover:text-white dark:bg-[#881337] dark:text-[#fb7185]">
               <GoShieldCheck />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
@@ -39,7 +39,7 @@ const Solutions = () => {
           </div>
           {/*   Cloud Security */}
           <div data-aos="fade-up" className="group relative rounded-2xl bg-white p-8 shadow-md hover:shadow-xl transition-all dark:bg-gray-800 dark:shadow-gray-900/50">
-            <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-[#dd9f9f] text-[#f13737] transition-colors group-hover:bg-[#fb4848] group-hover:text-white dark:bg-[#f88585] dark:text-[#e8b8b8]">
+            <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-[#ffe4e6] text-[#e11d48] transition-colors group-hover:bg-[#e11d48] group-hover:text-white dark:bg-[#881337] dark:text-[#fb7185]">
               <MdCloudQueue />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
@@ -54,7 +54,7 @@ const Solutions = () => {
 
           {/*   Identity Protection   */}
           <div data-aos="fade-up" className="group relative rounded-2xl bg-white p-8 shadow-md hover:shadow-xl transition-all dark:bg-gray-800 dark:shadow-gray-900/50">
-            <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-[#dd9f9f] text-[#f13737] transition-colors group-hover:bg-[#fb4848] group-hover:text-white dark:bg-[#f88585] dark:text-[#e8b8b8]">
+            <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-[#ffe4e6] text-[#e11d48] transition-colors group-hover:bg-[#e11d48] group-hover:text-white dark:bg-[#881337] dark:text-[#fb7185]">
               <IoFingerPrint />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
@@ -67,7 +67,7 @@ const Solutions = () => {
           </div>
           {/* Threat Intelligence */}
           <div data-aos="fade-up" className="group relative rounded-2xl bg-white p-8 shadow-md hover:shadow-xl transition-all dark:bg-gray-800 dark:shadow-gray-900/50">
-            <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-[#dd9f9f] text-[#f13737] transition-colors group-hover:bg-[#fb4848] group-hover:text-white dark:bg-[#f88585] dark:text-[#e8b8b8]">
+            <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-[#ffe4e6] text-[#e11d48] transition-colors group-hover:bg-[#e11d48] group-hover:text-white dark:bg-[#881337] dark:text-[#fb7185]">
               <CiGlobe />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
@@ -81,7 +81,7 @@ const Solutions = () => {
           </div>
           {/*Vulnerability Management   */}
           <div data-aos="fade-up" className="group relative rounded-2xl bg-white p-8 shadow-md hover:shadow-xl transition-all dark:bg-gray-800 dark:shadow-gray-900/50">
-            <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-[#dd9f9f] text-[#f13737] transition-colors group-hover:bg-[#fb4848] group-hover:text-white dark:bg-[#f88585] dark:text-[#e8b8b8]">
+            <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-[#ffe4e6] text-[#e11d48] transition-colors group-hover:bg-[#e11d48] group-hover:text-white dark:bg-[#881337] dark:text-[#fb7185]">
               <CiSearch />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
@@ -97,7 +97,7 @@ const Solutions = () => {
           {/* Incident Response
            */}
           <div data-aos="fade-up" className="group relative rounded-2xl bg-white p-8 shadow-md hover:shadow-xl transition-all dark:bg-gray-800 dark:shadow-gray-900/50">
-            <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-[#dd9f9f] text-[#f13737] transition-colors group-hover:bg-[#fb4848] group-hover:text-white dark:bg-[#f88585] dark:text-[#e8b8b8]">
+            <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-[#ffe4e6] text-[#e11d48] transition-colors group-hover:bg-[#e11d48] group-hover:text-white dark:bg-[#881337] dark:text-[#fb7185]">
               <GoBell />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">

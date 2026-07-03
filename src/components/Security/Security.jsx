@@ -11,7 +11,7 @@ const Security = () => {
       <div className='container mx-auto px-4 lg:px-8'>
 
         <div className='mx-auto max-w-3xl text-center'>
-          <div data-aos="fade-up" className='mb-4 inline-flex items-center rounded-full bg-[#dd9f9f] px-3 py-1 text-sm font-medium text-[#fb7070] dark:bg-[#fb6565] dark:text-[#f49a9a]'>
+          <div data-aos="fade-up" className='mb-4 inline-flex items-center rounded-full bg-[#ffe4e6] px-3 py-1 text-sm font-medium text-[#be123c] dark:bg-[#881337] dark:text-[#fda4af]'>
             Get In Touch
           </div>
           <h2 data-aos="fade-up" className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white'>
@@ -74,12 +74,12 @@ const Security = () => {
 
               {/* phone */}
               <div className='flex gap-4'>
-                <div className='flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#e46480] text-[#e11d48] dark:bg-primary-900/50 dark:text-primary-400'>
+                <div className='flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#ffe4e6] text-[#e11d48] dark:bg-[#881337] dark:text-[#fb7185]'>
                   <MdOutlinePhone data-aos="fade-up"  className='h-6 w-6' />
                 </div>
                 <div>
                   <h3 data-aos="fade-up"  className='font-semibold text-gray-900 dark:text-white'>Phone</h3>
-                  <a data-aos="fade-up"  href="" className='mt-1 text-gray-600 transition-colors hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400'>
+                  <a data-aos="fade-up"  href="" className='mt-1 text-gray-600 transition-colors hover:text-[#e11d48] dark:text-gray-400 dark:hover:text-[#fb7185]'>
                     +923256349106
                   </a>
                 </div>
@@ -87,12 +87,12 @@ const Security = () => {
 
               {/* email */}
               <div className='flex gap-4'>
-                <div className='flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#e46480] text-[#e11d48] dark:bg-primary-900/50 dark:text-primary-400'>
+                <div className='flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#ffe4e6] text-[#e11d48] dark:bg-[#881337] dark:text-[#fb7185]'>
                   <TiMessage data-aos="fade-up"  className='h-6 w-6' />
                 </div>
                 <div>
                   <h3 data-aos="fade-up"  className='font-semibold text-gray-900 dark:text-white'>Email</h3>
-                  <a data-aos="fade-up"  href="" className='mt-1 text-gray-600 transition-colors hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400'>
+                  <a data-aos="fade-up"  href="" className='mt-1 text-gray-600 transition-colors hover:text-[#e11d48] dark:text-gray-400 dark:hover:text-[#fb7185]'>
                     usman@gmail.com
                   </a>
                 </div>
@@ -100,7 +100,7 @@ const Security = () => {
 
               {/* address */}
               <div className='flex gap-4'>
-                <div className='flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#e46480] text-[#e11d48] dark:bg-primary-900/50 dark:text-primary-400'>
+                <div className='flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#ffe4e6] text-[#e11d48] dark:bg-[#881337] dark:text-[#fb7185]'>
                   <CiLocationOn data-aos="fade-up"  className='h-6 w-6' />
                 </div>
                 <div>
@@ -114,7 +114,7 @@ const Security = () => {
 
               {/* office hours */}
               <div className='flex gap-4'>
-                <div className='flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#e46480] text-[#e11d48] dark:bg-primary-900/50 dark:text-primary-400'>
+                <div className='flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#ffe4e6] text-[#e11d48] dark:bg-[#881337] dark:text-[#fb7185]'>
                   <CiClock2 data-aos="fade-up"   className='h-6 w-6' />
                 </div>
                 <div>

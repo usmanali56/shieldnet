@@ -7,7 +7,7 @@ import Secure from "./Secure";
 const Solutions = () => {
   return (
     <>
-      <div className="bg-[#E11D48] py-16 lg:py-24 dark:bg-[#4C0519]">
+      <div className="bg-[#e11d48] py-16 lg:py-24 dark:bg-[#881337]">
         <div className="container mt-20 mx-auto text-center px-4 lg:px-8">
           <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
             Security Solutions

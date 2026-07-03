@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Plan = () => {
   return (
-    <div className="bg-[#E11D48] py-16 lg:py-24 dark:bg-[#4C0519]">
+    <div className="bg-[#E11D48] py-16 lg:py-24 dark:bg-[#881337]">
       <div className="container mx-auto px-4 text-center lg:px-8">
         <h2 className="text-3xl font-bold text-white sm:text-4xl">
           Not Sure Which Plan?
@@ -12,18 +13,18 @@ const Plan = () => {
           level of protection. Schedule a free consultation today.
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <a
-            href=""
+          <Link
+            to="/contact"
             className="inline-flex items-center rounded-full bg-white px-8 py-3 font-medium text-[#E11D48] shadow-lg transition-colors hover:bg-gray-100"
           >
             Talk to Sales
-          </a>
-          <a
-            href=""
+          </Link>
+          <Link
+            to="https://web.telegram.org/"
             className="inline-flex items-center rounded-full border-2 border-white/30 px-8 py-3 font-medium text-white transition-colors hover:bg-white/10"
           >
             Call (555) 567-8901
-          </a>
+          </Link>
         </div>
       </div>
     </div>

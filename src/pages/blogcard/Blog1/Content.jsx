@@ -9,7 +9,7 @@ const Content = () => {
       {/* Blog Content */}
       <div className=' text-gray-600 dark:text-gray-400 leading-relaxed mt-15'>
 
-        <p className='mb-6'>
+        <p className='mb-6 text-base font-normal'>
           Zero trust is no longer a buzzword — it is the foundational security model for every
           modern organization. The principle is simple: never trust, always verify. But
           implementing it correctly requires a strategic approach that goes far beyond deploying
@@ -22,17 +22,17 @@ const Content = () => {
 
         <ul className='list-disc pl-5 mb-6 space-y-3'>
           <li>
-            <span className='font-bold text-gray-900 dark:text-white'>Verify Explicitly:</span> Always
+            <strong className='font-bold text-gray-900 dark:text-white'>Verify Explicitly:</strong> Always
             authenticate and authorize based on all available data points, including user identity,
             location, device health, service or workload, data classification, and anomalies.
           </li>
           <li>
-            <span className='font-bold text-gray-900 dark:text-white'>Least Privilege Access:</span> Limit
+            <strong className='font-bold text-gray-900 dark:text-white'>Least Privilege Access:</strong> Limit
             user access with just-in-time and just-enough-access (JIT/JEA), risk-based adaptive
             policies, and data protection.
           </li>
           <li>
-            <span className='font-bold text-gray-900 dark:text-white'>Assume Breach:</span> Minimize
+            <strong className='font-bold text-gray-900 dark:text-white'>Assume Breach:</strong> Minimize
             blast radius and segment access. Verify end-to-end encryption, use analytics to get
             visibility, and drive threat detection and improve defenses.
           </li>
@@ -42,14 +42,14 @@ const Content = () => {
           Building Your Zero Trust Framework
         </h2>
 
-        <p className='mb-6'>
+        <p className='mb-6 text-base font-normal'>
           The journey to zero trust starts with understanding your protect surface — the critical
           data, applications, assets, and services (DAAS) that matter most. Unlike the attack
           surface, which is vast and constantly expanding, the protect surface is finite and
           knowable.
         </p>
 
-        <p className='mb-6'>
+        <p className='mb-6 text-base font-normal'>
           Start by mapping your transaction flows to understand how traffic moves across your
           network. This visibility is essential for creating micro-segmentation policies that
           enforce least-privilege access at every layer.
@@ -59,14 +59,14 @@ const Content = () => {
           Identity as the New Perimeter
         </h2>
 
-        <p className='mb-6'>
+        <p className='mb-6 text-base font-normal'>
           In a zero trust model, identity replaces the network as the primary security perimeter.
           This means investing in strong identity verification through multi-factor authentication,
           continuous validation, and behavioral analytics that can detect compromised credentials
           even when the attacker has valid passwords.
         </p>
 
-        <p className='mb-6'>
+        <p className='mb-6 text-base font-normal'>
           Modern identity threat detection platforms analyze login patterns, device fingerprints,
           and behavioral baselines to flag anomalous access attempts in real time — often catching
           attacks that traditional perimeter defenses miss entirely.
@@ -78,28 +78,28 @@ const Content = () => {
 
         <ol className='list-decimal pl-5 mb-6 space-y-2'>
           <li>
-            <span className='font-bold text-gray-900 dark:text-white'>Audit your current state</span> — Map
+            <strong className='font-bold text-gray-900 dark:text-white'>Audit your current state</strong> — Map
             all users, devices, applications, and data flows
           </li>
           <li>
-            <span className='font-bold text-gray-900 dark:text-white'>Define your protect surface</span> — Identify
+            <strong className='font-bold text-gray-900 dark:text-white'>Define your protect surface</strong> — Identify
             your most critical assets
           </li>
           <li>
-            <span className='font-bold text-gray-900 dark:text-white'>Map transaction flows</span> — Understand
+            <strong className='font-bold text-gray-900 dark:text-white'>Map transaction flows</strong> — Understand
             how data moves through your environment
           </li>
           <li>
-            <span className='font-bold text-gray-900 dark:text-white'>Architect zero trust policies</span> — Create
+            <strong className='font-bold text-gray-900 dark:text-white'>Architect zero trust policies</strong> — Create
             micro-segmentation rules
           </li>
           <li>
-            <span className='font-bold text-gray-900 dark:text-white'>Monitor and maintain</span> — Continuously
+            <strong className='font-bold text-gray-900 dark:text-white'>Monitor and maintain</strong> — Continuously
             validate and adapt policies
           </li>
         </ol>
 
-        <p>
+        <p className='text-base font-normal'>
           Zero trust is not a destination but a continuous journey. As your organization evolves
           and new threats emerge, your zero trust architecture must adapt. The key is starting
           with a clear strategy and building incrementally, securing your most critical assets
@@ -113,7 +113,7 @@ const Content = () => {
 
       {/* Share this article */}
       <div>
-        <p className='text-sm font-medium text-gray-900 dark:text-white mb-4'>
+        <p className=' text-base font-normal text-gray-900 dark:text-white mb-4'>
           Share this article
         </p>
         <div className='flex items-center gap-3 m-0 p-0'>

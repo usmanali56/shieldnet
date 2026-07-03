@@ -8,7 +8,7 @@ const Content3 = () => {
              {/* Blog Content */}
              <div className=' text-gray-600 dark:text-gray-400 leading-relaxed mt-15'>
        
-               <p className='mb-6'>
+               <p className='mb-6 text-base font-normal'>
                 Cloud misconfigurations remain the leading cause of cloud data breaches, 
                 responsible for over 65% of incidents in 2025. As organizations accelerate their cloud adoption across AWS, Azure, and GCP,
                  the attack surface grows exponentially — and so does the risk of human error in configuration management.
@@ -17,7 +17,7 @@ const Content3 = () => {
                <h2 className='text-2xl font-bold text-gray-900 dark:text-white mb-4 pt-6'>
                 What is CSPM?
                </h2>
-       <p className='mb-6'>
+       <p className='mb-6 text-base font-normal'>
    Cloud Security Posture Management (CSPM) tools continuously monitor your cloud environments
     for misconfigurations, compliance violations, and security risks. They provide automated detection and remediation guidance,
     helping security teams maintain a strong security posture across complex multi-cloud deployments.
@@ -28,24 +28,24 @@ const Content3 = () => {
                </h2>
                <ul className='list-disc pl-5 mb-6 space-y-3'>
                  <li>
-                   <span className='font-bold text-gray-900 dark:text-white'>Overly permissive IAM policies</span> 
+                   <strong className='font-bold text-gray-900 dark:text-white'>Overly permissive IAM policies</strong> 
                   
                   — Service accounts with admin-level access that violate least-privilege principles
                  </li>
                  <li>
-                   <span className='font-bold text-gray-900 dark:text-white'>Public storage buckets </span> 
+                   <strong className='font-bold text-gray-900 dark:text-white'>Public storage buckets </strong> 
                   — S3 buckets, Azure Blob containers, or GCS buckets accidentally exposed to the internet
                  </li>
                  <li>
-                   <span className='font-bold text-gray-900 dark:text-white'>Unencrypted data stores </span>
+                   <strong className='font-bold text-gray-900 dark:text-white'>Unencrypted data stores </strong>
                    — Databases and storage volumes without encryption at rest or in transit
                  </li>
                  <li>
-                   <span className='font-bold text-gray-900 dark:text-white'>Open security groups</span>
+                   <strong className='font-bold text-gray-900 dark:text-white'>Open security groups</strong>
                   — Network rules that allow unrestricted inbound access on sensitive ports
                  </li>
                   <li>
-                   <span className='font-bold text-gray-900 dark:text-white'>Missing logging and monitoring</span>
+                   <strong className='font-bold text-gray-900 dark:text-white'>Missing logging and monitoring</strong>
                    — CloudTrail, Azure Monitor, or GCP Audit Logs not enabled on critical resources
                  </li>
                  
@@ -54,12 +54,12 @@ const Content3 = () => {
                <h2 className='text-2xl font-bold text-gray-900 dark:text-white mb-4'>
                 Implementing CSPM Effectively
                </h2>
-       <p className='mb-6'>
+       <p className='mb-6 text-base font-normal'>
           The key to successful CSPM implementation is treating it as a continuous process, 
           not a one-time audit. Start by establishing a baseline of your current cloud posture,
            prioritizing findings by risk severity, and integrating remediation into your existing DevOps workflows.
        </p>
-       <p className='mb-6'>
+       <p className='mb-6 text-base font-normal'>
 Shift-left by embedding security checks into your infrastructure-as-code pipelines. 
 Tools like Terraform plan scanning and CloudFormation template validation can catch misconfigurations before they ever reach production
 . This preventive approach is far more effective than detecting and remediating issues after deployment.
@@ -69,7 +69,7 @@ Tools like Terraform plan scanning and CloudFormation template validation can ca
        <h2 className='text-2xl font-bold text-gray-900 dark:text-white mb-4 pt-6'>
                 Compliance and Governance
                </h2>
-       <p className='mb-6'>
+       <p className='mb-6 text-base font-normal'>
    CSPM tools should map findings to relevant compliance frameworks automatically — whether that is SOC 2,
     HIPAA, PCI DSS, or CIS Benchmarks. This continuous compliance monitoring replaces painful
      point-in-time audits with real-time visibility into your compliance posture,

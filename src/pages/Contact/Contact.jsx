@@ -5,7 +5,7 @@ import Location from './Location'
 const Contact = () => {
   return (
      <>
-    <div className='bg-[#E11D48] py-16 mt-20 lg:py-24 dark:bg-[#4C0519]'>
+    <div className='bg-[#E11D48] py-16 mt-20 lg:py-24 dark:bg-[#881337]'>
         <div className='container mx-auto text-center px-4 lg:px-8'>
       <h1 className='text-3xl font-bold text-white sm:text-4xl lg:text-5xl'>
         Contact Us

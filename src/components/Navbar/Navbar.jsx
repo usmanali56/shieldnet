@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
-import logo from '../../assets/logo.svg'
 import { useTheme } from '../../context/ThemContext';
 import { RxCross2 } from "react-icons/rx";
 import { IoReorderThreeSharp } from "react-icons/io5";
 import { Link } from 'react-router-dom';
+
+import logo from '../../assets/logo.svg.svg'
+import logoLight from '../../assets/logo.light-svg.svg'
 
 const Navbar = () => {
     const { isDark, toggleTheme } = useTheme();
@@ -17,13 +19,18 @@ const Navbar = () => {
       <header className='fixed top-0 left-0 w-full z-50 border-b border-gray-200 bg-white backdrop-blur-lg transition-all dark:border-gray-800 dark:bg-[#0a0a0f]'>
         <div className='container mx-auto flex h-16 items-center justify-between px-4 lg:h-20 lg:px-8'>
 
-          {/* Logo */}
-          <div className="logo">
-            <Link to="/" className='flex items-center gap-2'>
-              <img loading="lazy" src="https://shieldnet-colorlib.pages.dev/assets/img/logo.svg" className='h-8 w-auto lg:h-10 dark:hidden' />
-              <img src="https://shieldnet-colorlib.pages.dev/assets/img/logo-light.svg" className='hidden h-8 w-auto lg:h-10 dark:block' />
-            </Link>
-          </div>
+        <Link to='/' className='flex items-center gap-2'>
+          <img 
+            src={logo} 
+            alt="ShieldNet"  loading="lazy"
+            className='h-8 w-auto lg:h-10 dark:hidden'
+          />
+          <img 
+            src={logoLight} loading="lazy"
+            alt="ShieldNet" 
+            className='hidden h-8 w-auto lg:h-10 dark:block'
+          />
+        </Link>
 
           {/* Nav Links - sirf desktop par */}
           <nav className='hidden lg:flex lg:items-center lg:gap-8'>
