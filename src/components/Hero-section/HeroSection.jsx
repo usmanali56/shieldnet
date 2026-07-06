@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 const HeroSection = () => {
   return (
     <section>
-    <div className="container mx-auto px-4 py-24 lg:px-8 lg:py-32 bg-white dark:bg-[#030712] dark:bg-[radial-gradient(circle_at_bottom_left,_rgba(220,38,38,0.18),transparent_45%),radial-gradient(circle_at_top_right,_rgba(29,78,216,0.12),transparent_40%)]">
+ <div className="container mx-auto px-4 py-24 lg:px-8 lg:py-32 bg-white dark:bg-[#030712] dark:bg-[radial-gradient(ellipse_100%_45%_at_50%_42%,_rgba(220,38,38,0.24),transparent_70%)]">
       <div className="grid mt-20 items-center gap-12 lg:grid-cols-2 lg:gap-16">
         {/* left section */}
         <div>

@@ -113,7 +113,7 @@ export default function Testimonials() {
         {/* Left Arrow */}
         <button
           onClick={handlePrev}
-          className="absolute left-0 z-20 flex items-center justify-center w-10 h-10 bg-white dark:bg-[#1e293b] border border-gray-100 dark:border-gray-800 rounded-full shadow-md text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white transition-all focus:outline-none"
+          className="absolute left-7 z-20 flex items-center justify-center w-10 h-10 bg-white dark:bg-[#1e293b] border border-gray-100 dark:border-gray-800 rounded-full shadow-md text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white transition-all focus:outline-none"
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
             <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
@@ -186,7 +186,7 @@ export default function Testimonials() {
         {/* Right Arrow */}
         <button
           onClick={handleNext}
-          className="absolute right-0 z-10 flex items-center justify-center w-10 h-10 bg-white dark:bg-[#1e293b] border border-gray-100 dark:border-gray-800 rounded-full shadow-md text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white transition-all focus:outline-none"
+          className="absolute right-7  z-10 flex items-center justify-center w-10 h-10 bg-white dark:bg-[#1e293b] border border-gray-100 dark:border-gray-800 rounded-full shadow-md text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white transition-all focus:outline-none"
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
             <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />

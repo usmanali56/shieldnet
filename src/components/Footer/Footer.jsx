@@ -14,7 +14,7 @@ const Footer = () => {
       <div className='class="container mx-auto px-4 lg:px-8"'>
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-8">
           {/* Brand colums */}
-          <div className="lg:col-span-4">
+          <div className="lg:col-span-4 ml-4">
            
         <Link to='/' className="inline-block">
          <img loading="lazy" src="https://shieldnet-colorlib.pages.dev/assets/img/logo-light.svg" alt="" className="h-10 w-auto"/>
