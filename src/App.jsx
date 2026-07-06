@@ -33,10 +33,11 @@ import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton'
+import StickyCTA from './components/StickyCTA/StickyCTA'
 const App = () => {
   useEffect(() => {
     AOS.init({
-      duration:700,
+      duration:400,
       easing: "ease-in-sine",
       delay:300,
       offset: 50,
@@ -50,7 +51,7 @@ const App = () => {
     <ScrollToTopButton />
       <ScrollProgress />
       <Navbar />
-
+<StickyCTA />
       <Routes>
 
         {/* Main single page */}

@@ -6,7 +6,7 @@ const Defending = () => {
       <div className='container mx-auto px-4 lg:px-8'>
 <div className='grid items-center gap-12 lg:grid-cols-2'>
 <div>
-    <div className='mb-4 inline-flex items-center rounded-full bg-[#FFE4E6] px-3 py-1 text-sm font-medium text-[#BE123C] dark:bg-[#88133750 ] dark:text-[#FDA4AF]'>
+    <div className='mb-4 inline-flex items-center rounded-full bg-[#ffe4e6] px-3 py-1 text-sm font-medium text-[#be123c] dark:bg-[#881337] dark:text-[#FDA4AF]'>
      Our Mission 
     </div>
     <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white'>

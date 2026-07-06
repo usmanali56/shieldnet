@@ -26,7 +26,7 @@ Blog
 <span className='text-gray-900 dark:text-white'>Article</span>
 </nav>
 <div className='mt-6'>
-<span className='inline-flex items-center rounded-full bg-[#FFE4E6] px-3 py-1 text-xs font-medium text-[#BE123C] dark:bg-primary-[#4C0519] dark:text-[#FDA4AF]'>
+<span className='inline-flex items-center rounded-full bg-[#FFE4E6] px-3 py-1 text-xs font-medium text-[#BE123C] dark:bg-[#881337] dark:text-[#FDA4AF]'>
 Architecture
 </span>
 </div>
