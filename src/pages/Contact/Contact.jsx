@@ -10,7 +10,7 @@ const Contact = () => {
       <h1 className='text-3xl font-bold text-white sm:text-4xl lg:text-5xl'>
         Contact Us
 </h1>
-      <p className='mx-auto mt-4 max-w-2xl text-[#FFE4E6] '>
+      <p className='mx-auto text-lg mt-4 max-w-2xl text-[#FFE4E6] '>
      Talk to our security experts. Available 24/7 for security incidents and consultations.
         </p>
       <nav className='mt-6 flex items-center justify-center gap-2 text-sm text-[#FECDD3]'>

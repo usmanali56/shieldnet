@@ -12,7 +12,7 @@ const Pricing = () => {
           <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
             Pricing
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-[#FFE4E6] ">
+          <p className="mx-auto text-lg mt-4 max-w-2xl text-[#FFE4E6] ">
             Transparent, per-endpoint pricing that scales with your
             organization. No hidden fees, no surprises.
           </p>

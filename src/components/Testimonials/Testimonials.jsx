@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 const testimonials = [
   {
@@ -54,20 +54,34 @@ const testimonials = [
 export default function Testimonials() {
   const [currentPage, setCurrentPage] = useState(0);
   const [visibleCards, setVisibleCards] = useState(3);
+  const containerRef = useRef(null);
 
   useEffect(() => {
-    const updateVisibleCards = () => {
-      if (window.matchMedia("(max-width: 767px)").matches) {
+    const el = containerRef.current;
+    if (!el) return;
+
+    const updateVisibleCards = (width) => {
+      if (width <= 640) {
         setVisibleCards(1);
-      } else if (window.matchMedia("(max-width: 1023px)").matches) {
+      } else if (width <= 1024) {
         setVisibleCards(2);
       } else {
         setVisibleCards(3);
       }
     };
-    updateVisibleCards();
-    window.addEventListener("resize", updateVisibleCards);
-    return () => window.removeEventListener("resize", updateVisibleCards);
+
+    // Initial measurement
+    updateVisibleCards(el.offsetWidth);
+
+    // Watch container's own width (not window width)
+    const observer = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        updateVisibleCards(entry.contentRect.width);
+      }
+    });
+    observer.observe(el);
+
+    return () => observer.disconnect();
   }, []);
 
   const totalPages = testimonials.length - visibleCards + 1;
@@ -102,18 +116,18 @@ export default function Testimonials() {
         <h2 className="text-3xl md:text-4xl font-bold text-[#0f172a] dark:text-white mb-4">
           Trusted by Security Leaders
         </h2>
-        <p className="text-gray-500 dark:text-gray-400 text-[16px] leading-relaxed">
+        <p className="text-gray-500 dark:text-gray-400 text-lg leading-relaxed">
           See why CISOs and security teams across industries choose ShieldNet to protect their organizations.
         </p>
       </div>
 
       {/* Main Wrapper with Left/Right spacing for arrows */}
-      <div className="max-w-[1400px] mx-auto relative flex items-center px-6 md:px-12">
+      <div ref={containerRef} className="max-w-[1600px] mx-auto relative flex items-center px-4 md:px-8">
 
         {/* Left Arrow */}
         <button
           onClick={handlePrev}
-          className="absolute left-0 z-20 flex items-center justify-center w-10 h-10 bg-white dark:bg-[#1e293b] border border-gray-100 dark:border-gray-800 rounded-full shadow-md text-gray-500 dark:text-gray-400  hover:text-gray-800 dark:hover:text-white transition-all focus:outline-none"
+          className="absolute left-0 md:-left-2 lg:left-4 z-20 flex items-center justify-center w-10 h-10 bg-white dark:bg-[#1e293b] border border-gray-100 dark:border-gray-800 rounded-full shadow-md text-gray-500 dark:text-gray-400  hover:text-gray-800 dark:hover:text-white transition-all focus:outline-none"
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
             <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
@@ -134,12 +148,12 @@ export default function Testimonials() {
               <div
                 key={item.id}
                 style={{ width: `${100 / testimonials.length}%` }}
-                className="flex-shrink-0 px-1.5 md:px-3 h-full"
+                className="flex-shrink-0 px-1 md:px-2 h-full"
               >
                 <div
                   data-aos="fade-up"
                   data-aos-delay={index * 100}
-                  className="bg-white dark:bg-[#1e293b] border border-[#f0f1f3] dark:border-gray-800 rounded-2xl p-5 md:p-8 shadow-[0_4px_20px_rgba(0,0,0,0.02)] dark:shadow-[0_4px_20px_rgba(0,0,0,0.2)] flex flex-col justify-between min-h-[240px] md:min-h-[340px] h-full transition-colors duration-300"
+                  className="bg-white dark:bg-[#1e293b] border border-[#f0f1f3] dark:border-gray-800 rounded-2xl p-6 md:p-10 shadow-[0_4px_20px_rgba(0,0,0,0.02)] dark:shadow-[0_4px_20px_rgba(0,0,0,0.2)] flex flex-col justify-between min-h-[240px] md:min-h-[360px] h-full transition-colors duration-300"
                 >
                   <div>
                     {/* Stars */}
@@ -158,9 +172,9 @@ export default function Testimonials() {
                     </div>
 
                     {/* Text */}
-                    <p className="text-[#0f172a] dark:text-[#f8fafc] text-[15px] md:text-[16px] font-normal leading-[1.6] tracking-wide mb-6 md:mb-8 min-h-[90px] md:min-h-[110px]">
+                    <blockquote className="text-[#0f172a] dark:text-[#f8fafc] text-[15px] md:text-lg font-medium leading-[1.6] tracking-wide mb-6 md:mb-8 min-h-[90px] md:min-h-[110px]">
                       {item.text}
-                    </p>
+                    </blockquote>
                   </div>
 
                   {/* Profile Block */}
@@ -186,7 +200,7 @@ export default function Testimonials() {
         {/* Right Arrow */}
         <button
           onClick={handleNext}
-          className="absolute right-0  z-10 flex items-center justify-center w-10 h-10 bg-white dark:bg-[#1e293b] border border-gray-100 dark:border-gray-800 rounded-full shadow-md text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white transition-all focus:outline-none"
+          className="absolute right-0 md:-right-2 lg:right-4 z-10 flex items-center justify-center w-10 h-10 bg-white dark:bg-[#1e293b] border border-gray-100 dark:border-gray-800 rounded-full shadow-md text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white transition-all focus:outline-none"
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
             <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />

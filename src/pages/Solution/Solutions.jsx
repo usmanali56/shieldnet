@@ -12,7 +12,7 @@ const Solutions = () => {
           <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
             Security Solutions
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-[#FFE4E6] ">
+          <p className="mx-auto text-lg mt-4 max-w-2xl text-[#FFE4E6] ">
             Comprehensive cybersecurity solutions to protect your endpoints,
             cloud infrastructure, identities, and data from advanced threats.
           </p>

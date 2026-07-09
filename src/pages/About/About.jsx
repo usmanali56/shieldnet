@@ -13,7 +13,7 @@ const About = () => {
       <h1 className='text-3xl font-bold text-white sm:text-4xl lg:text-5xl'>
         About ShieldNet
 </h1>
-      <p className='mx-auto mt-4 max-w-2xl text-[#FFE4E6] '>
+      <p className='mx-auto text-lg mt-4 max-w-2xl text-[#FFE4E6] '>
       Founded by ex-NSA and military cyber operators, ShieldNet builds the next generation of threat protection for modern enterprises.
         </p>
       <nav className='mt-6 flex items-center justify-center gap-2 text-sm text-[#FECDD3]'>

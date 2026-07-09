@@ -8,7 +8,7 @@ const Plan = () => {
         <h2 className="text-3xl font-bold text-white sm:text-4xl">
           Not Sure Which Plan?
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-lg text-primary-100">
+        <p className="mx-auto mt-4 max-w-2xl text-lg text-[#ffe4e6]">
           Our security consultants can assess your needs and recommend the right
           level of protection. Schedule a free consultation today.
         </p>

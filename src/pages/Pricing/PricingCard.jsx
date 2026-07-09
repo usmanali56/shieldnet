@@ -93,7 +93,7 @@ const PricingCard = () => {
 
               {/* Plan Name */}
               <div className="text-center">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-1">
                   {plan.name}
                 </h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
